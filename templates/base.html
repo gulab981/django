@@ -1,0 +1,111 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  {%bootstrap_css%}
+  <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  <div class="conatiner d-flex justify-content-center mt-5">
+    <h1 class="display-3">Gu<span style="color:red;">L</span>ab</h1>
+  </div>
+  <div class="container">
+    <hr class="bg-light">
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-6 col-sm-12 col-md-12 col-lg-6">
+        <img src="{% static 'images/gulab.jpg' %}" class="card-img-top" alt="">
+      </div>
+      <div
+        class="col-12 col-6 col-sm-12 col-md-6 col-lg-6 mt-5 d-flex justify-content-center align-items-center text-center lead">
+        <p class="display-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non debitis sapiente pariatur quos
+          dolorem, cum accusamus aliquid saepe? Quam impedit temporibus quod placeat tempore amet harum maiores illum
+          aut.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolor nulla quam distinctio adipisci,
+          praesentium enim at esse maiores odit dignissimos nisi voluptas voluptatibus et? Fuga sint eius vitae porro!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse quaerat vero aspernatur temporibus.
+          Voluptatem nemo cupiditate et? Exercitationem adipisci ratione voluptatum nemo itaque mollitia quae blanditiis
+          earum deserunt eveniet!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mt-5 d-flex justify-content-center">
+    <h1>Projects</h1><br>
+    <h1>&nbsp; &#8595;</h1>
+  </div>
+  <div class="container">
+    <hr class="bg-light">
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-12 col-4 col-sm-12 col-md-6 col-lg-4 mt-5">
+        <div class="card bg-dark text-light bg-image hover-zoom">
+          <div class="card-image">
+            <img src="{% static 'images/mobile.jpg' %}" height="180rem" class="card-img-top" alt="">
+            <h3 class="card-header ">
+              Mobile App
+            </h3>
+            <div class="card-body">
+              <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque maxime maiores minima neque
+                quidem</p>
+              <div class="card-footer">
+                <a href="/mobile"><button class="btn btn-dark border form-control" type="">Learn More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-4 col-sm-12 col-md-6 col-lg-4 mt-5">
+        <div class="card bg-dark text-light">
+          <div class="card-image">
+            <img src="{% static 'images/desktop.jpg' %}" height="180rem" class="card-img-top cr-mr" alt="">
+            <h3 class="card-header ">
+              Desktop App
+            </h3>
+            <div class="card-body">
+              <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque maxime maiores minima neque
+                quidem</p>
+              <div class="card-footer">
+                <a href="/desktop">
+                  <button class="btn btn-dark border form-control" type="">Learn More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-4 col-sm-12 col-md-6 col-lg-4 mt-5">
+        <div class="card bg-dark text-light">
+          <div class="card-image">
+            <img src="{% static 'images/web.jpg' %}" height="180rem" class="card-img-top cr-mr hover-shadow" alt="">
+            <h3 class="card-header ">
+              Web App
+            </h3>
+            <div class="card-body">
+              <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque maxime maiores minima neque
+                quidem</p>
+              <div class="card-footer d-flex justify-content-center">
+                <p class="btn-dark  text-uppercase disabled" type="">In Process</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include 'footer.html' %}
+</body>
+
+</html>
